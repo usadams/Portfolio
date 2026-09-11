@@ -1,1 +1,950 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Usman Ahmed Adam — Public Health Researcher & Lecturer</title>
+<meta name="description" content="Academic portfolio of Dr. Usman Ahmed Adam — public health researcher and lecturer working across epidemiology, health systems and data-driven policy.">
 
+<!-- ============================================================
+     NOTE: All text content below is DEMO PLACEHOLDER.
+     Replace names, institutions, publications and contact details
+     with verified information before publishing.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+
+<script>document.documentElement.classList.add('js');</script>
+
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  --bg:#ffffff;
+  --surface:#ffffff;
+  --soft:#f5f8f9;
+  --ink:#0b1220;
+  --body:#3f4c5c;
+  --muted:#6b7a8d;
+  --line:#e3e9ee;
+  --accent:#0e7c6b;
+  --accent-ink:#0a5f52;
+  --accent-soft:#e7f4f1;
+  --shadow:0 24px 60px -32px rgba(11,18,32,.35);
+  --radius:16px;
+  --wrap:1120px;
+}
+html[data-theme="dark"]{
+  --bg:#0a1017;
+  --surface:#0f1720;
+  --soft:#111b25;
+  --ink:#eef3f7;
+  --body:#b3c0cd;
+  --muted:#8697a8;
+  --line:#1e2b38;
+  --accent:#3ec6ac;
+  --accent-ink:#7fdfcb;
+  --accent-soft:#122a2a;
+  --shadow:0 24px 60px -30px rgba(0,0,0,.8);
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--body);
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16.5px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{
+  font-family:"Newsreader",Georgia,serif;
+  color:var(--ink);
+  font-weight:500;
+  line-height:1.15;
+  letter-spacing:-.015em;
+  margin:0;
+}
+p{margin:0 0 1.1em}
+p:last-child{margin-bottom:0}
+
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 28px}
+
+/* ---------- Utilities ---------- */
+.eyebrow{
+  font-family:"Inter",sans-serif;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 14px;
+  display:flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--accent);opacity:.6}
+.section{padding:96px 0;border-top:1px solid var(--line)}
+.section--soft{background:var(--soft)}
+.section-head{max-width:640px;margin-bottom:52px}
+.section-head h2{font-size:clamp(1.75rem,3.4vw,2.5rem)}
+.section-head p{margin-top:16px;color:var(--muted);font-size:1.02rem}
+
+/* ---------- Reveal ---------- */
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- Header ---------- */
+.header{
+  position:sticky;top:0;z-index:100;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s,background .3s;
+}
+.header.stuck{border-bottom-color:var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px;position:relative}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark{
+  width:38px;height:38px;flex:none;border-radius:11px;
+  background:var(--ink);color:var(--bg);
+  display:grid;place-items:center;
+  font-family:"Newsreader",serif;font-size:1rem;font-weight:600;letter-spacing:.02em;
+}
+html[data-theme="dark"] .brand-mark{background:var(--accent);color:#04120f}
+.brand-text{font-family:"Newsreader",serif;font-size:1.02rem;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{
+  font-size:.9rem;font-weight:500;color:var(--muted);
+  padding:9px 14px;border-radius:9px;
+  transition:color .2s,background .2s;
+}
+.nav-links a:hover{color:var(--ink);background:var(--soft)}
+.nav-links a.active{color:var(--ink)}
+.nav-links a.active::after{
+  content:"";display:block;height:1.5px;width:16px;background:var(--accent);
+  margin:5px auto -6px;border-radius:2px;
+}
+.nav-links a.nav-cta{
+  color:#fff;background:var(--accent);padding:9px 18px;margin-left:8px;font-weight:600;
+}
+.nav-links a.nav-cta:hover{background:var(--accent-ink)}
+html[data-theme="dark"] .nav-links a.nav-cta{color:#04120f}
+html[data-theme="dark"] .nav-links a.nav-cta:hover{background:var(--accent-ink)}
+.nav-links a.nav-cta::after{display:none}
+
+.nav-actions{display:flex;align-items:center;gap:6px}
+.icon-btn{
+  width:38px;height:38px;display:inline-grid;place-items:center;
+  border:1px solid var(--line);border-radius:10px;background:transparent;
+  color:var(--muted);cursor:pointer;transition:.2s;
+}
+.icon-btn:hover{color:var(--ink);border-color:var(--muted)}
+.icon-btn svg{width:17px;height:17px}
+.menu-btn{display:none}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  padding:88px 0 96px;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;top:-260px;right:-180px;width:620px;height:620px;border-radius:50%;
+  background:radial-gradient(circle,var(--accent-soft),transparent 68%);
+  pointer-events:none;
+}
+.hero-grid{
+  position:relative;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.4rem,5.6vw,3.9rem);
+  letter-spacing:-.03em;
+}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lede{
+  margin-top:22px;font-size:1.12rem;max-width:52ch;color:var(--body);
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:13px 24px;border-radius:11px;
+  font-size:.92rem;font-weight:600;
+  border:1px solid transparent;cursor:pointer;
+  transition:transform .18s,background .2s,border-color .2s,color .2s;
+}
+.btn:active{transform:translateY(1px)}
+.btn--primary{background:var(--accent);color:#fff}
+.btn--primary:hover{background:var(--accent-ink)}
+html[data-theme="dark"] .btn--primary{color:#04120f}
+.btn--ghost{border-color:var(--line);color:var(--ink)}
+.btn--ghost:hover{border-color:var(--muted);background:var(--soft)}
+.btn svg{width:15px;height:15px}
+
+.hero-stats{
+  display:flex;flex-wrap:wrap;gap:38px;margin-top:46px;padding-top:30px;
+  border-top:1px solid var(--line);
+}
+.hero-stats .stat strong{
+  display:block;font-family:"Newsreader",serif;font-size:1.9rem;color:var(--ink);
+  line-height:1;font-weight:500;
+}
+.hero-stats .stat span{font-size:.82rem;color:var(--muted);letter-spacing:.02em}
+
+/* Profile card */
+.profile-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:32px;
+  box-shadow:var(--shadow);
+}
+.portrait{
+  width:112px;height:112px;border-radius:50%;
+  background:linear-gradient(150deg,var(--accent),var(--accent-ink));
+  color:#fff;display:grid;place-items:center;
+  font-family:"Newsreader",serif;font-size:2.4rem;font-weight:500;letter-spacing:.02em;
+  box-shadow:0 0 0 6px var(--accent-soft);
+}
+html[data-theme="dark"] .portrait{color:#04120f}
+.profile-card h3{margin-top:22px;font-size:1.32rem}
+.profile-card .role{font-size:.9rem;color:var(--muted);margin:6px 0 22px}
+.facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.facts li{
+  display:flex;justify-content:space-between;gap:16px;
+  padding:12px 0;border-bottom:1px solid var(--line);font-size:.87rem;
+}
+.facts li:last-child{border-bottom:0}
+.facts span{color:var(--muted)}
+.facts strong{color:var(--ink);font-weight:500;text-align:right}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.about-grid p{font-size:1.02rem}
+.about-grid p+p{margin-top:1.1em}
+
+/* ---------- Expertise ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 28px;transition:transform .25s,border-color .25s,box-shadow .25s;
+}
+.card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 40%,var(--line));box-shadow:var(--shadow)}
+.card .num{
+  font-family:"Newsreader",serif;font-size:.85rem;color:var(--accent);
+  letter-spacing:.08em;margin-bottom:16px;display:block;
+}
+.card h3{font-size:1.14rem;margin-bottom:10px}
+.card p{font-size:.92rem;color:var(--muted);margin:0}
+
+/* ---------- Publications ---------- */
+.pub-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pub{
+  display:grid;grid-template-columns:82px 1fr;gap:28px;
+  padding:28px 0;border-bottom:1px solid var(--line);
+  transition:background .25s;
+}
+.pub:hover{background:color-mix(in srgb,var(--accent) 4%,transparent)}
+.pub .year{font-family:"Newsreader",serif;font-size:1.05rem;color:var(--accent);padding-top:2px}
+.pub h3{font-size:1.06rem;font-weight:500;line-height:1.4;margin-bottom:8px}
+.pub .meta{font-size:.87rem;color:var(--muted)}
+.pub .meta em{font-style:italic;color:var(--body)}
+.pub .tag{
+  display:inline-block;margin-top:12px;font-size:.72rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;
+  color:var(--accent);background:var(--accent-soft);
+  padding:4px 10px;border-radius:6px;
+}
+.pub-cta{margin-top:36px}
+
+/* ---------- Timeline ---------- */
+.split{display:grid;grid-template-columns:1.35fr .65fr;gap:72px;align-items:start}
+.timeline{position:relative;padding-left:30px}
+.timeline::before{
+  content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1.5px;
+  background:linear-gradient(var(--accent),var(--line));
+}
+.tl-item{position:relative;padding-bottom:38px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--accent);
+}
+.tl-item .when{font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.tl-item h3{font-size:1.12rem;margin-bottom:4px}
+.tl-item .org{font-size:.9rem;color:var(--muted);margin-bottom:10px}
+.tl-item p{font-size:.93rem;color:var(--body);margin:0}
+
+.aside-block{margin-bottom:38px}
+.aside-block h3{
+  font-family:"Inter",sans-serif;font-size:.74rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line);
+}
+.aside-list{list-style:none;margin:0;padding:0}
+.aside-list li{padding:12px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.aside-list li:last-child{border-bottom:0}
+.aside-list strong{display:block;color:var(--ink);font-weight:500;font-size:.95rem}
+.aside-list span{color:var(--muted);font-size:.83rem}
+
+/* ---------- Awards ---------- */
+.awards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.award{
+  border-left:2px solid var(--accent);
+  padding:6px 0 6px 22px;
+}
+.award .yr{font-size:.8rem;color:var(--accent);font-weight:600;letter-spacing:.06em}
+.award h3{font-size:1rem;margin:6px 0 4px}
+.award p{font-size:.86rem;color:var(--muted);margin:0}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.contact-list{list-style:none;margin:32px 0 0;padding:0}
+.contact-list li{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.contact-list li:first-child{border-top:1px solid var(--line)}
+.contact-list .ico{
+  width:34px;height:34px;flex:none;border-radius:9px;background:var(--accent-soft);
+  display:grid;place-items:center;color:var(--accent);
+}
+.contact-list .ico svg{width:16px;height:16px}
+.contact-list small{display:block;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.contact-list a,.contact-list strong{color:var(--ink);font-weight:500;font-size:.96rem;word-break:break-word}
+.contact-list a:hover{color:var(--accent)}
+
+.socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.socials a{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 16px;border:1px solid var(--line);border-radius:9px;
+  font-size:.85rem;font-weight:500;color:var(--body);
+  transition:.2s;
+}
+.socials a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.socials svg{width:15px;height:15px}
+
+.form-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px;box-shadow:var(--shadow);
+}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:.8rem;font-weight:600;letter-spacing:.05em;color:var(--muted);margin-bottom:8px;text-transform:uppercase}
+.field input,.field textarea{
+  width:100%;padding:12px 14px;border-radius:10px;
+  border:1px solid var(--line);background:var(--bg);color:var(--ink);
+  font-family:inherit;font-size:.94rem;transition:border-color .2s,box-shadow .2s;
+}
+.field input:focus,.field textarea:focus{
+  outline:none;border-color:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 15%,transparent);
+}
+.field textarea{resize:vertical;min-height:118px}
+.form-note{font-size:.8rem;color:var(--muted);margin-top:14px}
+
+/* ---------- Footer ---------- */
+.footer{border-top:1px solid var(--line);padding:40px 0;background:var(--soft)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.footer p{font-size:.85rem;color:var(--muted);margin:0}
+.to-top{
+  display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:500;
+  color:var(--muted);transition:color .2s;
+}
+.to-top:hover{color:var(--accent)}
+.to-top svg{width:14px;height:14px}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .profile-card{max-width:460px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:56px}
+  .awards{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr;gap:52px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:900px){
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:var(--surface);
+    border-bottom:1px solid var(--line);
+    padding:10px 28px 22px;
+    display:none;
+    box-shadow:0 24px 40px -24px rgba(11,18,32,.3);
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:14px 0;border-bottom:1px solid var(--line);border-radius:0}
+  .nav-links a.active::after{display:none}
+  .nav-links a.nav-cta{margin:16px 0 0;justify-content:center;display:flex;border-bottom:0}
+  .menu-btn{display:inline-grid}
+  .brand-text{font-size:.95rem}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .section{padding:72px 0}
+  .hero{padding:56px 0 72px}
+  .cards{grid-template-columns:1fr}
+  .awards{grid-template-columns:1fr}
+  .pub{grid-template-columns:1fr;gap:10px}
+  .hero-stats{gap:28px}
+  .profile-card,.form-card{padding:26px}
+  .footer-inner{flex-direction:column;align-items:flex-start;gap:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  *{animation-duration:.001ms !important;transition-duration:.001ms !important}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark">UA</span>
+      <span class="brand-text">Dr. Usman Ahmed Adam</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#publications">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle colour theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Public Health Researcher &amp; Lecturer</p>
+        <h1>Turning evidence into <em>better health</em> policy and practice.</h1>
+        <p class="lede">
+          I am Dr. Usman Ahmed Adam — a researcher and educator working at the
+          intersection of epidemiology, health systems strengthening and
+          data-driven decision-making. My work supports governments and
+          institutions in designing programmes that reach the people who need
+          them most.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#publications">
+            View research
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat"><strong>40+</strong><span>Peer-reviewed papers</span></div>
+          <div class="stat"><strong>15</strong><span>Years in research</span></div>
+          <div class="stat"><strong>12</strong><span>Postgraduate students</span></div>
+          <div class="stat"><strong>20+</strong><span>Funded projects</span></div>
+        </div>
+      </div>
+
+      <aside class="profile-card reveal">
+        <div class="portrait" aria-hidden="true">UA</div>
+        <h3>Dr. Usman Ahmed Adam</h3>
+        <p class="role">PhD, MPH · Public Health &amp; Epidemiology</p>
+        <ul class="facts">
+          <li><span>Position</span><strong>Senior Lecturer</strong></li>
+          <li><span>Affiliation</span><strong>[University Name]</strong></li>
+          <li><span>Location</span><strong>[City, Country]</strong></li>
+          <li><span>Email</span><strong>usman.adam@example.edu</strong></li>
+        </ul>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section section--soft" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">About</p>
+        <h2>Research that answers questions people are actually asking.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="reveal">
+          <p>
+            Over the past fifteen years I have led and contributed to research
+            programmes spanning infectious disease surveillance, maternal and
+            child health, and the design of resilient primary health care
+            systems. My approach combines rigorous quantitative methods with
+            close collaboration with the communities and institutions that use
+            the findings.
+          </p>
+          <p>
+            I currently serve as Senior Lecturer at [University Name], where I
+            teach epidemiology and research methods at postgraduate level and
+            supervise doctoral candidates working on health systems and
+            population health topics.
+          </p>
+        </div>
+        <div class="reveal">
+          <p>
+            Beyond the university, I act as a technical adviser to public health
+            agencies and development partners, supporting programme evaluation,
+            data systems design and evidence-to-policy translation.
+          </p>
+          <p>
+            I am a strong advocate for open science and locally led research
+            capacity — mentoring early-career researchers and building
+            collaborations that outlast individual grants.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERTISE ================= -->
+  <section class="section" id="expertise">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Expertise</p>
+        <h2>Where I do my best work.</h2>
+        <p>Six overlapping areas that shape my research, teaching and consulting practice.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <span class="num">01</span>
+          <h3>Epidemiology &amp; Biostatistics</h3>
+          <p>Study design, causal inference and advanced statistical modelling for population health research.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">02</span>
+          <h3>Health Systems &amp; Policy</h3>
+          <p>Service delivery, financing and governance reforms that improve access, quality and equity.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">03</span>
+          <h3>Disease Surveillance</h3>
+          <p>Design and evaluation of early-warning and routine surveillance systems for outbreak preparedness.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">04</span>
+          <h3>Data Science for Health</h3>
+          <p>R and Python workflows, reproducible pipelines and dashboards that make data usable for decision-makers.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">05</span>
+          <h3>Programme Evaluation</h3>
+          <p>Mixed-methods impact evaluation, implementation research and cost-effectiveness analysis.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">06</span>
+          <h3>Teaching &amp; Supervision</h3>
+          <p>Postgraduate teaching in epidemiology and research methods; supervision of MSc and PhD candidates.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PUBLICATIONS ================= -->
+  <section class="section section--soft" id="publications">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected Research</p>
+        <h2>Recent publications.</h2>
+        <p>A selection from more than forty peer-reviewed articles, reports and book chapters.</p>
+      </div>
+
+      <ol class="pub-list">
+        <li class="pub reveal">
+          <div class="year">2024</div>
+          <div>
+            <h3>Strengthening routine immunisation coverage in underserved districts: a mixed-methods evaluation</h3>
+            <p class="meta">Adam, U. A., et al. <em>[Journal Name]</em>, 18(3), 214–229.</p>
+            <span class="tag">Lead author</span>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <div class="year">2023</div>
+          <div>
+            <h3>Predictors of delayed care-seeking for febrile illness in children under five: a multi-site analysis</h3>
+            <p class="meta">Adam, U. A., Ibrahim, S., &amp; Okonkwo, L. <em>[Journal Name]</em>, 12(4), e0271.</p>
+            <span class="tag">Open access</span>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <div class="year">2023</div>
+          <div>
+            <h3>Designing resilient surveillance systems: lessons from a regional outbreak response</h3>
+            <p class="meta">Adam, U. A., &amp; [Co-author]. <em>[Journal Name]</em>, 9(1), 55–68.</p>
+            <span class="tag">Corresponding author</span>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <div class="year">2022</div>
+          <div>
+            <h3>Cost-effectiveness of community health worker programmes for maternal care: a modelling study</h3>
+            <p class="meta">Adam, U. A., et al. <em>[Journal Name]</em>, 27(6), 884–897.</p>
+          </div>
+        </li>
+
+        <li class="pub reveal">
+          <div class="year">2021</div>
+          <div>
+            <h3>Data quality and use in primary health care facilities: a national cross-sectional assessment</h3>
+            <p class="meta">Adam, U. A., Bello, H., &amp; [Co-author]. <em>[Journal Name]</em>, 15(2), 101–114.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="pub-cta reveal">
+        <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">
+          Full publication list
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Academic &amp; professional journey.</h2>
+      </div>
+
+      <div class="split">
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <p class="when">2021 — Present</p>
+            <h3>Senior Lecturer, Department of Public Health</h3>
+            <p class="org">[University Name]</p>
+            <p>Lead investigator on three externally funded projects; teach epidemiology and advanced research methods; supervise MSc and PhD candidates.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <p class="when">2017 — 2021</p>
+            <h3>Research Fellow, Health Systems Unit</h3>
+            <p class="org">[Research Institute]</p>
+            <p>Designed and led multi-site evaluations of primary health care reforms, working directly with state health agencies and development partners.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <p class="when">2015 — 2017</p>
+            <h3>Postdoctoral Researcher</h3>
+            <p class="org">[Research Institute]</p>
+            <p>Focused on infectious disease modelling and surveillance data quality; published six peer-reviewed articles from the fellowship.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <p class="when">2012 — 2015</p>
+            <h3>Public Health Specialist (Consultant)</h3>
+            <p class="org">[Organisation]</p>
+            <p>Provided monitoring and evaluation support to national and sub-national health programmes across multiple regions.</p>
+          </div>
+        </div>
+
+        <aside>
+          <div class="aside-block reveal">
+            <h3>Education</h3>
+            <ul class="aside-list">
+              <li><strong>PhD, Public Health</strong><span>[University Name] · 2015</span></li>
+              <li><strong>MPH, Epidemiology</strong><span>[University Name] · 2010</span></li>
+              <li><strong>MBBS / BSc</strong><span>[University Name] · 2006</span></li>
+            </ul>
+          </div>
+
+          <div class="aside-block reveal">
+            <h3>Professional Memberships</h3>
+            <ul class="aside-list">
+              <li><strong>[Professional Body]</strong><span>Fellow</span></li>
+              <li><strong>[Public Health Association]</strong><span>Member</span></li>
+              <li><strong>[Epidemiology Society]</strong><span>Member</span></li>
+            </ul>
+          </div>
+
+          <div class="aside-block reveal">
+            <h3>Languages</h3>
+            <ul class="aside-list">
+              <li><strong>English</strong><span>Fluent</span></li>
+              <li><strong>Hausa</strong><span>Native</span></li>
+              <li><strong>Arabic</strong><span>Professional</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AWARDS ================= -->
+  <section class="section section--soft" id="awards">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Recognition</p>
+        <h2>Awards &amp; grants.</h2>
+      </div>
+
+      <div class="awards">
+        <div class="award reveal">
+          <p class="yr">2024</p>
+          <h3>Research Excellence Award</h3>
+          <p>[Awarding Body] — for outstanding contribution to health systems research.</p>
+        </div>
+        <div class="award reveal">
+          <p class="yr">2022</p>
+          <h3>Major Research Grant</h3>
+          <p>[Funder] — three-year grant for community health worker programme evaluation.</p>
+        </div>
+        <div class="award reveal">
+          <p class="yr">2019</p>
+          <h3>Early Career Fellowship</h3>
+          <p>[Foundation] — competitive fellowship supporting surveillance systems research.</p>
+        </div>
+        <div class="award reveal">
+          <p class="yr">2018</p>
+          <h3>Best Paper Award</h3>
+          <p>[Conference Name] — for work on routine data quality in primary care.</p>
+        </div>
+        <div class="award reveal">
+          <p class="yr">2016</p>
+          <h3>Travel &amp; Presentation Grant</h3>
+          <p>[Society] — competitive award to present at international congress.</p>
+        </div>
+        <div class="award reveal">
+          <p class="yr">2013</p>
+          <h3>Doctoral Scholarship</h3>
+          <p>[University Name] — full funding for PhD studies in public health.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 style="font-size:clamp(1.75rem,3.4vw,2.4rem)">Let's work together.</h2>
+        <p style="margin-top:18px;color:var(--muted);max-width:44ch">
+          Open to research collaborations, consulting engagements, guest lectures
+          and postgraduate supervision enquiries.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><small>Email</small><a href="mailto:usman.adam@example.edu">usman.adam@example.edu</a></div>
+          </li>
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10.5c0 5-9 11-9 11s-9-6-9-11a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10.5" r="3"/></svg></span>
+            <div><small>Office</small><strong>Department of Public Health, [University Name]</strong></div>
+          </li>
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg></span>
+            <div><small>Website</small><a href="#">www.usmanadam.example</a></div>
+          </li>
+        </ul>
+
+        <div class="socials">
+          <a href="#" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="#" target="_blank" rel="noopener">ORCID</a>
+          <a href="#" target="_blank" rel="noopener">ResearchGate</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">X / Twitter</a>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@institution.edu" required>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Collaboration, supervision, consulting…">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me a little about your enquiry…" required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center">
+            Send message
+          </button>
+          <p class="form-note" id="formNote">
+            This form opens your email client. Connect a service such as Formspree
+            to handle submissions directly.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year">2025</span> Dr. Usman Ahmed Adam. All rights reserved.</p>
+    <a class="to-top" href="#top">
+      Back to top
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Theme ---------- */
+  var root = document.documentElement;
+  var themeBtn = document.getElementById('themeBtn');
+  var themeIcon = document.getElementById('themeIcon');
+  var sunPath = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+  var moonPath = '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>';
+
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    themeIcon.innerHTML = theme === 'dark' ? moonPath : sunPath;
+    try { localStorage.setItem('theme', theme); } catch (e) {}
+  }
+
+  var stored = null;
+  try { stored = localStorage.getItem('theme'); } catch (e) {}
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(stored || (prefersDark ? 'dark' : 'light'));
+
+  themeBtn.addEventListener('click', function () {
+    applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = document.getElementById('menuBtn');
+  var navLinks = document.getElementById('navLinks');
+
+  menuBtn.addEventListener('click', function () {
+    var open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+
+  navLinks.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  /* ---------- Sticky header shadow ---------- */
+  var header = document.getElementById('header');
+  function onScroll() {
+    header.classList.toggle('stuck', window.scrollY > 8);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- Scroll reveal ---------- */
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    revealEls.forEach(function (el, i) {
+      el.style.transitionDelay = (Math.min(i % 4, 3) * 70) + 'ms';
+      io.observe(el);
+    });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---------- Active nav link ---------- */
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+  var links = Array.prototype.slice.call(navLinks.querySelectorAll('a[href^="#"]'));
+
+  if ('IntersectionObserver' in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var id = entry.target.id;
+        links.forEach(function (link) {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ---------- Contact form (mailto fallback) ---------- */
+  var form = document.getElementById('contactForm');
+  var note = document.getElementById('formNote');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = form.name.value.trim();
+    var email = form.email.value.trim();
+    var subject = form.subject.value.trim() || 'Website enquiry';
+    var message = form.message.value.trim();
+
+    if (!name || !email || !message) {
+      note.textContent = 'Please complete your name, email and message.';
+      note.style.color = '#c2410c';
+      return;
+    }
+
+    var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+    window.location.href = 'mailto:usman.adam@example.edu'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+
+    note.textContent = 'Opening your email client…';
+    note.style.color = '';
+  });
+
+  /* ---------- Year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
